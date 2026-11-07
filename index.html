@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Pas d'indexation tant que l'appli ne se partage qu'entre proches (tâche 3.9). -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Télécharger Pousse</title>
+  <style>
+    :root {
+      --brume: #F2F5F1;
+      --carte: #FFFFFF;
+      --nuit: #12201A;
+      --texte-moyen: #3A4A42;
+      --feuille: #1F7A4D;
+      --sur-feuille: #FFFFFF;
+      --feuille-douce: #DCEFE3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brume: #101A15;
+        --carte: #1A2620;
+        --nuit: #E8EFEA;
+        --texte-moyen: #C3D0C8;
+        --feuille-douce: #1E3A2B;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--brume);
+      color: var(--nuit);
+      font-family: Manrope, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+    }
+    main { max-width: 480px; margin: 0 auto; padding: 48px 20px 40px; }
+    h1 { font-size: 40px; line-height: 1.2; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 8px; }
+    .accroche { font-size: 18px; color: var(--texte-moyen); margin: 0 0 32px; }
+    .bouton {
+      display: block;
+      text-align: center;
+      background: var(--feuille);
+      color: var(--sur-feuille);
+      font-size: 22px;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 22px 16px;
+      border-radius: 20px;
+    }
+    .bouton:focus-visible { outline: 3px solid var(--nuit); outline-offset: 3px; }
+    .sous-bouton { text-align: center; color: var(--texte-moyen); font-size: 15px; margin: 12px 0 36px; }
+    .carte { background: var(--carte); border-radius: 20px; padding: 20px; margin-bottom: 16px; }
+    h2 { font-size: 18px; margin: 0 0 12px; }
+    ol { margin: 0; padding-left: 22px; }
+    li { margin-bottom: 10px; }
+    li:last-child { margin-bottom: 0; }
+    p.carte { margin: 0 0 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Pousse</h1>
+    <p class="accroche">La mémoire de tes plantes.</p>
+
+    <a class="bouton" href="https://github.com/theghost013/pousse-apk/releases/latest/download/pousse.apk" download>Télécharger Pousse</a>
+    <p class="sous-bouton">Pour Android. Toujours la dernière version.</p>
+
+    <section class="carte">
+      <h2>Pour l'installer</h2>
+      <ol>
+        <li>Touche « Télécharger Pousse ». Si ton téléphone prévient que ce fichier peut être dangereux, touche « Télécharger quand même ».</li>
+        <li>Ouvre le fichier téléchargé.</li>
+        <li>Android te demande d'autoriser l'installation : accepte, puis touche « Installer ».</li>
+      </ol>
+    </section>
+
+    <p class="carte">Une nouvelle version ? Reviens ici, télécharge-la et installe-la par-dessus : tes plantes restent.</p>
+  </main>
+</body>
+</html>
